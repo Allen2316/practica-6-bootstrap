@@ -1,0 +1,10 @@
+.radios {    
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 20px auto;
+    padding: 0 10px;    
+}
+
+.radios  label{
+    margin-bottom: 0;   
+}
