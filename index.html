@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class=".container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registro" data-toggle="modal" data-target="#registro">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login" data-toggle="modal" data-target="#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Administracion de Usuarios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">DASW</h1>
+            <p class="lead">Crear una interfaz web para registro de usuarios</p>
+            <hr class="my-4">
+            <ul>
+                <li>Login</li>
+                <li>Registro</li>
+                <li>Consultas</li>
+            </ul>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Ir a Consultas</a>
+        </div>
+
+        <!-- Inicio Login -->
+        <div class="modal fade" id="login" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="correo">Correo Electronico</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="email" class="form-control" id="correo"
+                                        placeholder="Correo Registrado" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contraseña">Contraseña</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"
+                                                aria-hidden="true"></i>
+                                    </div>
+                                    <input type="password" class="form-control" id="contraseña"
+                                        placeholder="Correo Registrado" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" data-dismiss="modal">Login</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                            <hr class="my-4">
+                            <p>¿No tienes una cuenta?<a href="#registro" data-toggle="modal" data-target="#registro"
+                                    data-dismiss="modal"> Registrate aquí</a></p>
+                        </form>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+        <!-- fin login -->
+        <!-- registro -->
+        <div class="modal fade" id="registro" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Registrar Usuario</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+
+                                <div class="form-group mb-3">
+                                    <div class="form-group mb-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Nombre o nombres" />
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control" placeholder="Apellidos" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <input type="email" class="form-control" id="correo" placeholder="Tu Correo" />
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <input type="password" class="form-control" placeholder="Contraseña" />
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <input type="password" class="form-control" placeholder="Confirme Contraseña" />
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <input type="date" class="form-control" max="2020-11-30" />
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Male</label><br>
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Female</label><br>
+                                    </div>
+                                </div> -->
+
+                                <div class="input-group mb-3">
+                                    <label for="male">Male</label>
+                                    <label for="female">Female</label>
+                                    <div class="input-group-prepend">
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        
+                                    </div>                                    
+                                </div>
+
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="input-group-prepend">
+                                    <input type="url" class="form-control" placeholder="Url de imagen de perfil" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" data-dismiss="modal">Registrarse</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+        <!-- fin registro -->
+
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper-core-1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
