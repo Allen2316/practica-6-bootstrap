@@ -1,10 +1,46 @@
-.radios {    
+.radios {
     border: 1px solid #ddd;
     border-radius: 3px;
     margin: 20px auto;
-    padding: 0 10px;    
+    padding: 0 10px;
 }
 
-.radios  label{
-    margin-bottom: 0;   
+.radios label {
+    margin-bottom: 0;
+}
+
+/* .conta{
+    margin-left: 15px;
+} */
+
+.cont {
+    margin: 30px;
+}
+
+.media .media-right button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.media-right button {
+    display: block;
+    margin: 0 5px 7px 0;
+}
+
+.media {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    align-self: center;
+}
+
+.media-left {
+    margin-left: 15px;
+}
+.media-body {
+    margin-left: 15px;
+}
+
+.navi{
+    margin-left: 10px;
 }
