@@ -34,7 +34,7 @@
         </div>
     </nav>
     <div class="container-fluid">
-        
+
         <div class="jumbotron ">
             <h1 class="display-4">DASW</h1>
             <p class="lead">Crear una interfaz web para registro de usuarios</p>
@@ -62,15 +62,15 @@
 
                     <!-- Modal Body -->
                     <div class="modal-body">
-                        <form role="form">
+                        <form>
                             <div class="form-group">
                                 <label for="correo">Correo Electronico</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"
+                                        <span class="input-group-text"><i class="fa fa-user"
                                                 aria-hidden="true"></i></span>
                                     </div>
-                                    <input type="email" class="form-control" placeholder="Correo Registrado" />
+                                    <input type="email" id="correo" class="form-control" placeholder="Correo Registrado" />
                                 </div>
                             </div>
 
@@ -78,10 +78,10 @@
                                 <label for="contraseña">Contraseña</label>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"
-                                                aria-hidden="true"></i>
+                                        <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i>
+                                        </span>
                                     </div>
-                                    <input type="password" class="form-control" placeholder="Contraseña" />
+                                    <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" />
                                 </div>
                             </div>
                             <div class="form-group">
@@ -115,7 +115,7 @@
 
                     <!-- Modal Body -->
                     <div class="modal-body">
-                        <form role="form">
+                        <form>
                             <div class="form-group">
 
                                 <div class="form-group mb-3">
@@ -175,6 +175,7 @@
                                     <button type="submit" class="btn btn-success">Registrarse</button>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                                 </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -182,7 +183,7 @@
         </div>
         <!-- fin registro -->
     </div>
-    <nav class="navi"  aria-label="Page navigation">
+    <nav class="navi" aria-label="Page navigation">
         <ul class="pagination ">
             <li class="page-item"><a class="page-link" href="./detalle.html">Anterior</a></li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
