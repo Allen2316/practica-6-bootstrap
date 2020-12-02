@@ -11,30 +11,31 @@
 </head>
 
 <body>
-    <div class=".container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#registro" data-toggle="modal" data-target="#registro">Registrarse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#login" data-toggle="modal" data-target="#login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./consultas.html">Administracion de Usuarios</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="jumbotron">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#registro" data-toggle="modal" data-target="#registro">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#login" data-toggle="modal" data-target="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./consultas.html">Administracion de Usuarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        
+        <div class="jumbotron ">
             <h1 class="display-4">DASW</h1>
             <p class="lead">Crear una interfaz web para registro de usuarios</p>
             <hr class="my-4">
@@ -157,7 +158,7 @@
                                         <input type="date" class="form-control" max="2020-11-30" required />
                                     </div>
                                 </div>
-                                <div class="radios" >
+                                <div class="radios">
                                     <input type="radio" id="mujer" name="genero" value="mujer" checked>
                                     <label for="mujer">Mujer</label><br>
                                     <input type="radio" id="hombre" name="genero" value="hombre">
@@ -181,8 +182,8 @@
         </div>
         <!-- fin registro -->
     </div>
-    <nav aria-label="Page navigation">
-        <ul class="pagination">
+    <nav class="navi"  aria-label="Page navigation">
+        <ul class="pagination ">
             <li class="page-item"><a class="page-link" href="./detalle.html">Anterior</a></li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="./consultas.html">2</a></li>
